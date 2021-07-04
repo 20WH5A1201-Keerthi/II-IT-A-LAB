@@ -1,0 +1,23 @@
+create database 20wh5a1201;
+show tables;
+create table ita2019(rno int(2) primary key, name char(20), cgpa real);
+show tables;
+insert into ita2019 values(01, 'Keerthi', 9.4);
+insert into ita2019 values(02, 'Teja', 9);
+insert into ita2019 values(03, 'Tarun', 8.6);
+insert into ita2019 values(04, 'Manu', 8);
+insert into ita2019 values(05, 'Jyothi', 8.9);
+select * from ita2019;
+update ita2019 set cgpa = 8.9 where rno = 03; 
+select * from ita2019;
+delete from ita2019 where rno = 05;
+select * from ita2019;
+alter table ita2019 add age int(2);
+update ita2019 set age=18;
+select * from ita2019;
+alter table ita2019 drop age;
+select * from ita2019;
+alter table ita2019 modify name varchar(20);
+alter table ita2019 change name sname varchar(20);
+select * from ita2019;
+drop table ita2019
