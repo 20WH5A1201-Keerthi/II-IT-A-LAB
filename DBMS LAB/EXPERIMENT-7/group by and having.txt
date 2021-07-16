@@ -1,0 +1,3 @@
+create table menu(sno int primary key, name char(10), cost real, weight real);
+insert into menu values(1, 'fry', 345, 20), (2, 'cakes', 1020, 100), (3, 'chocos', 200, 10), (4, 'milk', 200, 50),(5, 'cakes', 345, 56), (6, 'milk', 120, 50);
+select name as food_item from menu group by(name) having sum(cost) > 200;
